@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@capacitor/android': ^3.5.1
   '@capacitor/app': ^1.1.1
   '@capacitor/cli': ^3.5.1
   '@capacitor/core': ^3.5.1
@@ -18,6 +19,7 @@ specifiers:
   typescript: 4.6.3
 
 dependencies:
+  '@capacitor/android': 3.5.1_@capacitor+core@3.5.1
   '@capacitor/app': 1.1.1_@capacitor+core@3.5.1
   '@capacitor/cli': 3.5.1
   '@capacitor/core': 3.5.1
@@ -1198,6 +1200,14 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.16.7
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@capacitor/android/3.5.1_@capacitor+core@3.5.1:
+    resolution: {integrity: sha512-rjehS0+BQBlwoN8hUyrMuzexn/9QJsONb1kmN5uXcL8JuTEbv35fa7z0tSD4x1LKwUFd+3Zeuwt60QRuwijlmw==}
+    peerDependencies:
+      '@capacitor/core': ^3.5.0
+    dependencies:
+      '@capacitor/core': 3.5.1
     dev: false
 
   /@capacitor/app/1.1.1_@capacitor+core@3.5.1:
