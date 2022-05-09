@@ -13,6 +13,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             "backButton",
             (evt: BackButtonListenerEvent) => {
                 if (router.pathname === "/") {
+                    alert("Exiting app");
                     CapacitorApp.exitApp();
                 } else {
                     router.back();
