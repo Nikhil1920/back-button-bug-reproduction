@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         return () => {
             CapacitorApp.removeAllListeners();
         };
-    }, []);
+    }, [router]);
 
     return (
         <>
