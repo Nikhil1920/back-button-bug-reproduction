@@ -1,0 +1,6 @@
+{
+	"appId": "in.anreddy.test",
+	"appName": "test",
+	"webDir": "out",
+	"bundledWebRuntime": false
+}
