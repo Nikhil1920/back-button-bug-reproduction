@@ -1,15 +1,31 @@
-# MUI Next JS Starter
+# Code Reproduction for Capacitor bug
 
-This is a starter project for MUI Next JS.
+## What is the bug?
 
-It uses TypeScript and pwa is enabled.
+backButton listener not working in release build if minifyEnabled option in build.gradle is set to true.
 
-## Quick Start
+## Steps to reproduce the bug
 
-To get started clone the repository using the following command:
+-   Set minifyEnabled option in build.gradle in app folder to true
 
-```
-npx degit https://github.com/Nikhil1920/next-js-mui-pwa-starter.git
-```
+-   In the Build menu in android studio, click on generate signed Bundle/APK
 
-change the newly created directory name to your liking.
+-   Select Android App Bundle in the menu that appears
+
+-   Click next use any key to continue
+
+-   In Build Variants select Release
+
+-   Install the generated aab file on device
+
+I have used Playstore Internal app sharing to install the app on my device.
+
+## Current behavior
+
+App is closing when back button is pressed on page 2
+
+https://user-images.githubusercontent.com/57902888/167442771-8b704e54-25af-4dd3-99df-46931409ced8.mp4
+
+## Expected behavior
+
+App should navigate to the previous page when back button is pressed.
